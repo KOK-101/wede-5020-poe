@@ -45,7 +45,7 @@ TIMELINE AND MILESTONE
 
 ## Sitemap
 
-(img/Sitemap.png)<br> 
+<img src="img/Sitemap.png"><br> 
 
 ## References
 
