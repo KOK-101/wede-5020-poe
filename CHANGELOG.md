@@ -6,18 +6,19 @@ This project follows Semantic Versioning.
 
 ## [1.0.0] 
 ### Added
-- xyz
+- ccs stylesheet
+- image links on my service page
+-linked all my pages to the csss stylesheet
+-added 5 more html pages for my linked images on my service page
 
 ### Changed
-- xyz
+- change then font of text to italics etc
+-codes styles on my ccs stylesheet with media links
 
 ### Fixed
-- xyz
+- fixed my fotter as some of the things were correctly placed
 
 ## Semantic Versioning
-
-Format: MAJOR.MINOR.PATCH  
-Example: 2.1.3
 
 - MAJOR → Breaking changes (1.0.0 → 2.0.0)  
 - MINOR → New features (1.0.0 → 1.1.0)  
