@@ -57,3 +57,6 @@ https://youtu.be/JNFdCgmMkPk?si=d_sC--arPUrende1<br/>
 https://youtu.be/hlwlM4a5rxg?si=tnHgScwNCBaeSzKj<br/>
 https://youtu.be/kMme0C9lMhQ?si=lT21tBeetQo6hEqX<br/>
 
+## Desktop size
+<img src="img/Desktop size.png"><br>
+
