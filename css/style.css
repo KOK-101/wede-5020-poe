@@ -1,13 +1,92 @@
+@media (max-width: 768px){
+    header{
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    nav a{
+        padding: 10px 0;
+    }
+     main{
+        padding: 10px;
+    }
+     .owner, .co-owner{
+        flex-direction: column;
+        gap: 10px;
+    }
+     .wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media (min-width: 769px){
+        header{
+            text-align: left;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        nav a{
+            padding: 10px 15px;
+        }
+        main{
+            padding: 20px;
+        }
+        .owner, .co-owner{
+            flex-direction: row;
+            gap: 5rem;
+        }
+        .wrapper{
+            width: 420px;
+            padding: 30px 40px;
+        }
+}
+@media screen and (max-width: 768px) {
+    .index, .contact, .aboutus, .lgsg, .services, .pm, .mr, .us, .ss{
+        background: url(../img/cc.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        backdrop-filter: blur(2px);
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .index, .contact, .aboutus, .lgsg, .services, .pm, .mr, .us, .ss{
+        background: url(../img/cc.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        backdrop-filter: blur(2px);
+    }
+}
 .index{ 
-    background-color: rgb(16, 174, 140);
+    background: url(../img/cc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+
 header{
     float: top;
     position: top;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
+    
 h1{ 
-    background: blur(100px);
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid rgb(106, 214, 24);
+    margin-top: 0px;
+}
+nav {
+    overflow: hidden;
+    margin-top: 0px;
 }
 nav a{
     color: rgb(205, 217, 197);
@@ -16,7 +95,7 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
-    font-weight: 600;
+    font-weight: 800;
     padding: 10px 15px;
 
 }
@@ -27,18 +106,29 @@ nav a:hover{
 main{ 
     float: center;
     position :center;
+    border: 2px solid rgb(106, 214, 24);
+    margin: 50px auto;
+    padding: 20px;
+
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
 }
 h2{ 
     color: rgb(106, 214, 24);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
 }
 }
 footer{ 
+    border-top: 1px solid rgb(106, 214, 24);
     color: rgb(205, 217, 197);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -49,6 +139,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -70,16 +162,28 @@ nav a:hover{
 }
 
 .contact{
-    background-color: rgb(16, 174, 140);
+     background: url(../img/cc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
 
 header{
     float: top;
     position: top;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
+    
 h1{ 
-    background: blur(100px);
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid rgb(106, 214, 24);
+    margin-top: 0px;
+}
+nav {
+    overflow: hidden;
+    margin-top: 0px;
 }
 nav a{
     color: rgb(205, 217, 197);
@@ -88,6 +192,9 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
+    font-weight: 800;
+    padding: 10px 15px;
+
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -99,6 +206,8 @@ p{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
 }
 
 h2{ 
@@ -110,6 +219,7 @@ h3{
     color: rgb(106, 214, 24);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
 }
 h5{
     color: rgb(106, 214, 24);
@@ -133,6 +243,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+        margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -154,16 +266,28 @@ nav a:hover{
 }
 
 .aboutus{
-    background-color: rgb(16, 174, 140);
+     background: url(../img/cc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
      
 header{
     float: top;
     position: top;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
+    
 h1{ 
-    background: blur(100px);
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid rgb(106, 214, 24);
+    margin-top: 0px;
+}
+nav {
+    overflow: hidden;
+    margin-top: 0px;
 }
 nav a{
     color: rgb(205, 217, 197);
@@ -172,6 +296,9 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
+    font-weight: 800;
+    padding: 10px 15px;
+
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -184,16 +311,22 @@ p{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-style: italic;
 }
 h2{ 
     color: rgb(106, 214, 24);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+
 }
 h3{
     color: rgb(106, 214, 24);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    border-top: 1px solid rgb(106, 214, 24);
+    font-style: italic;
 
 }
 .owner{
@@ -234,13 +367,16 @@ footer{
     float: bottom;
     position: bottom;
     text-align: center;
+    
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-}
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
+    border-top: 1px solid rgb(106, 214, 24);
     color: rgb(205, 217, 197);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -256,18 +392,31 @@ nav a:hover{
     color: rgb(106, 214, 24);
 }
 }
+}
 
 .lgsg{
-    background-color: rgb(16, 174, 140);
+    background: url(../img/cc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
      
 header{
     float: top;
     position: top;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
+    
 h1{ 
-    background: blur(100px);
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid rgb(106, 214, 24);
+    margin-top: 0px;
+}
+nav {
+    overflow: hidden;
+    margin-top: 0px;
 }
 nav a{
     color: rgb(205, 217, 197);
@@ -276,14 +425,114 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
+    font-weight: 800;
+    padding: 10px 15px;
+
 }
 nav a:hover{
     color: rgb(106, 214, 24);
 }
 }
 main{ 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 420px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 50px;
+    padding: 30px 40px;
+    border: 2px solid rgb(106, 214, 24);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+.wrapper h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.wrapper .input-box{
+    background: transparent;
+    height: 40px;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border : 1px solid rgb(106, 214, 24);
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(205, 217, 197);
+}
+.input-box input::placeholder{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+.wrapper .confirm{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: rgb(205, 217, 197);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.confirm label input{
+    accent-color: rgb(106, 214, 24);
+    padding: 0px 10px;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: rgb(106, 214, 24);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(205, 217, 197);
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(222, 213, 213, 0.847);
+}
+.wrapper .account link{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-top: 10px;
+}
+.account link p a{
+    color: rgb(205, 217, 197);
+    text-decoration: none;
+    font-weight: 900;
+}
+.account link p a:hover{
+     color: rgb(106, 214, 24);
+     text-decoration: none;
+     font-weight: 900;
+}
+h3{
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
 footer{ 
     color: rgb(205, 217, 197);
     font-size: 15px;
@@ -295,6 +544,9 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
+    position: bottom;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -315,16 +567,28 @@ nav a:hover{
 }
 }
 .services{
-    background-color: rgb(16, 174, 140);
+    background: url(../img/cc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
      
 header{
     float: top;
     position: top;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
+    
 h1{ 
-    background: blur(100px);
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid rgb(106, 214, 24);
+    margin-top: 0px;
+}
+nav {
+    overflow: hidden;
+    margin-top: 0px;
 }
 nav a{
     color: rgb(205, 217, 197);
@@ -333,36 +597,50 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
+    font-weight: 800;
+    padding: 10px 15px;
+
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+
 }
 }
+
 main{ 
 h2{ 
     color: rgb(106, 214, 24);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;  
+    font-weight: 900;
 }
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-style: italic;
 }
 h3{
     color: rgb(106, 214, 24);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgb(106, 214, 24);
 }
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    transition: 0.5s ease;
+    mask-image: linear-gradient(to bottom, transparent, rgb(201, 111, 31));
+img:hover{
+        color: rgb(106, 214, 24);
+    }
 }
 }
 footer{ 
+    border-top: 1px solid rgb(106, 214, 24);
     color: rgb(205, 217, 197);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -373,6 +651,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -399,7 +679,12 @@ nav a:hover{
 
 
 .pm{
-    background-color: rgb(16, 174, 140);
+    background: url(../img/oo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
@@ -410,6 +695,8 @@ h1{
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
+     margin-top: 0px;
 }
 h5{ 
     color: rgb(106, 214, 24);
@@ -427,6 +714,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -447,8 +736,13 @@ nav a:hover{
 }
 }
 .mr{
-    background-color: rgb(16, 174, 140);
- p{ 
+    background: url(../img/oo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+
+p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -458,6 +752,8 @@ h1{
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
 }
 h5{ 
     color: rgb(106, 214, 24);
@@ -475,6 +771,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -495,7 +793,12 @@ nav a:hover{
 }
 }
 .us{
-    background-color: rgb(16, 174, 140);
+    background: url(../img/oo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
@@ -506,6 +809,8 @@ h1{
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
+     margin-top: 0px;
 }
 h5{ 
     color: rgb(106, 214, 24);
@@ -523,6 +828,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -543,7 +850,11 @@ nav a:hover{
 }
 }
 .ss{
-    background-color: rgb(16, 174, 140);
+     background: url(../img/oo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
@@ -554,6 +865,8 @@ h1{
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
+    margin-top: 0px;
 }
 h5{ 
     color: rgb(106, 214, 24);
@@ -571,6 +884,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
@@ -591,7 +906,11 @@ nav a:hover{
 }
 }
 .eds{
-    background-color: rgb(16, 174, 140);
+    background: url(../img/oo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
 p{ 
     color: rgb(205, 217, 197);
     font-size: 20px;
@@ -602,6 +921,8 @@ h1{
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid rgb(106, 214, 24);
+     margin-top: 0px;
 }
 h5{ 
     color: rgb(106, 214, 24);
@@ -619,6 +940,8 @@ p{
     color: rgb(205, 217, 197);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid rgb(106, 214, 24);
+    margin-bottom: 0px;
 }
 h4{ 
     color: rgb(205, 217, 197);
