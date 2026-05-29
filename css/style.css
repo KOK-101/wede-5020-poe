@@ -16,6 +16,9 @@ nav a{
     text-decoration: none;
     padding: 10px;
     transition: 0.5s ease;
+    font-weight: 600;
+    padding: 10px 15px;
+
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -65,6 +68,7 @@ nav a:hover{
 }
 }
 }
+
 .contact{
     background-color: rgb(16, 174, 140);
 
@@ -90,7 +94,33 @@ nav a:hover{
 }
 }
 main{ 
-    
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{ 
+    color: rgb(106, 214, 24);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+li{
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
 }
 footer{ 
     color: rgb(205, 217, 197);
@@ -122,6 +152,7 @@ nav a:hover{
 }
 }
 }
+
 .aboutus{
     background-color: rgb(16, 174, 140);
      
@@ -225,6 +256,7 @@ nav a:hover{
     color: rgb(106, 214, 24);
 }
 }
+
 .lgsg{
     background-color: rgb(16, 174, 140);
      
@@ -250,8 +282,8 @@ nav a:hover{
 }
 }
 main{ 
-
 }
+
 footer{ 
     color: rgb(205, 217, 197);
     font-size: 15px;
