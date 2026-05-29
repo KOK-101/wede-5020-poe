@@ -1,0 +1,609 @@
+.index{ 
+    background-color: rgb(16, 174, 140);
+header{
+    float: top;
+    position: top;
+h1{ 
+    background: blur(100px);
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+main{ 
+    float: center;
+    position :center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{ 
+    color: rgb(106, 214, 24);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.contact{
+    background-color: rgb(16, 174, 140);
+
+header{
+    float: top;
+    position: top;
+h1{ 
+    background: blur(100px);
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+main{ 
+    
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.aboutus{
+    background-color: rgb(16, 174, 140);
+     
+header{
+    float: top;
+    position: top;
+h1{ 
+    background: blur(100px);
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+main{
+
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{ 
+    color: rgb(106, 214, 24);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.owner{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+img{
+    width: 150px;
+    vertical-align: middle;
+}
+p{
+    flex: 1;
+}
+}
+.co-owner{
+     display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+img{
+    width: 150px;
+    vertical-align: middle;
+}
+p{
+    flex: 1;
+}
+}
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+.lgsg{
+    background-color: rgb(16, 174, 140);
+     
+header{
+    float: top;
+    position: top;
+h1{ 
+    background: blur(100px);
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+main{ 
+
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.services{
+    background-color: rgb(16, 174, 140);
+     
+header{
+    float: top;
+    position: top;
+h1{ 
+    background: blur(100px);
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+main{ 
+h2{ 
+    color: rgb(106, 214, 24);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;  
+}
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h3{
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+
+
+
+
+
+
+.pm{
+    background-color: rgb(16, 174, 140);
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{ 
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{ 
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.mr{
+    background-color: rgb(16, 174, 140);
+ p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{ 
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{ 
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.us{
+    background-color: rgb(16, 174, 140);
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{ 
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{ 
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.ss{
+    background-color: rgb(16, 174, 140);
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{ 
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{ 
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+.eds{
+    background-color: rgb(16, 174, 140);
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{ 
+    color: rgb(106, 214, 24);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{ 
+    color: rgb(106, 214, 24);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: bottom;
+    position: bottom;
+    text-align: center;
+p{ 
+    color: rgb(205, 217, 197);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{ 
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+nav a{
+    color: rgb(205, 217, 197);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    color: rgb(106, 214, 24);
+}
+}
+}
+
