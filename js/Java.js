@@ -2,7 +2,6 @@
 
 (function () {
     const headers = document.querySelectorAll('header');
- 
 headers.forEach(function (header) {
     const nav = header.querySelector('nav');
         if (!nav) return;
@@ -40,51 +39,67 @@ nav.addEventListener('click', function (e) {
  
     const usernameInput = form.querySelector('input[placeholder="USERNAME"]');
     const passwordInput = form.querySelector('input[placeholder="PASSWORD"]');
+    const confirmPasswordInput = form.querySelector('input[placeholder="CONFIRM PASSWORD"]');
     const confirmCheckbox = form.querySelector('.confirm input[type="checkbox"]');
  
-// Show/hide password toggle — adds a small "Show" text button
-// inside the password input-box. No HTML changes needed; it's
-// built and inserted here.
-if (passwordInput) {
-    const passwordBox = passwordInput.closest('.input-box') || passwordInput.parentElement;
-    passwordBox.style.position = 'relative';
+// Mask the password field — your login page's HTML currently
+// has type="text" on it. register.html already uses
+// type="password" so this is a no-op there.
+    if (passwordInput) {
+        passwordInput.setAttribute('type', 'password');
+    }
+ 
+    // Show/hide password toggle — adds a small "Show" text button
+    // inside a password input-box. No HTML changes needed; it's
+    // built and inserted here. Reusable so it applies to both the
+    // password field and (on register.html) the confirm field.
+function addShowHideToggle(input) {
+        if (!input) return;
+    const box = input.closest('.input-box') || input.parentElement;
+        box.style.position = 'relative';
  
     const toggleVisibilityBtn = document.createElement('button');
-toggleVisibilityBtn.type = 'button';
-toggleVisibilityBtn.textContent = 'Show';
-toggleVisibilityBtn.setAttribute('aria-label', 'Show password');
-toggleVisibilityBtn.style.position = 'absolute';
-toggleVisibilityBtn.style.right = '12px';
-toggleVisibilityBtn.style.top = '50%';
-toggleVisibilityBtn.style.transform = 'translateY(-50%)';
-toggleVisibilityBtn.style.background = 'none';
-toggleVisibilityBtn.style.border = 'none';
-toggleVisibilityBtn.style.color = 'rgb(106, 214, 24)';
-toggleVisibilityBtn.style.fontSize = '13px';
-toggleVisibilityBtn.style.fontFamily = "'Times New Roman', Times, serif";
-toggleVisibilityBtn.style.cursor = 'pointer';
-toggleVisibilityBtn.style.padding = '0';
+        toggleVisibilityBtn.type = 'button';
+        toggleVisibilityBtn.textContent = 'Show';
+        toggleVisibilityBtn.setAttribute('aria-label', 'Show password');
+        toggleVisibilityBtn.style.position = 'absolute';
+        toggleVisibilityBtn.style.right = '12px';
+        toggleVisibilityBtn.style.top = '50%';
+        toggleVisibilityBtn.style.transform = 'translateY(-50%)';
+        toggleVisibilityBtn.style.background = 'none';
+        toggleVisibilityBtn.style.border = 'none';
+        toggleVisibilityBtn.style.color = 'rgb(106, 214, 24)';
+        toggleVisibilityBtn.style.fontSize = '13px';
+        toggleVisibilityBtn.style.fontFamily = "'Times New Roman', Times, serif";
+        toggleVisibilityBtn.style.cursor = 'pointer';
+        toggleVisibilityBtn.style.padding = '0';
  
-    passwordBox.appendChild(toggleVisibilityBtn);
+    box.appendChild(toggleVisibilityBtn);
  
-toggleVisibilityBtn.addEventListener('click', function () {
-    const isHidden = passwordInput.getAttribute('type') === 'password';
-    passwordInput.setAttribute('type', isHidden ? 'text' : 'password');
-toggleVisibilityBtn.textContent = isHidden ? 'Hide' : 'Show';
-toggleVisibilityBtn.setAttribute('aria-label',isHidden ? 'Hide password' : 'Show password' );
+        toggleVisibilityBtn.addEventListener('click', function () {
+            const isHidden = input.getAttribute('type') === 'password';
+            input.setAttribute('type', isHidden ? 'text' : 'password');
+        toggleVisibilityBtn.textContent = isHidden ? 'Hide' : 'Show';
+        toggleVisibilityBtn.setAttribute(
+                'aria-label',
+                isHidden ? 'Hide password' : 'Show password'
+            );
         });
-}
+    }
+ 
+    addShowHideToggle(passwordInput);
+    addShowHideToggle(confirmPasswordInput);
  
 function clearError(input) {
-    input.style.borderColor = '';
+        input.style.borderColor = '';
     const box = input.closest('.input-box') || input.parentElement;
     const existing = box.querySelector('.field-error-text');
         if (existing) existing.remove();
-}
+    }
  
 function showError(input, message) {
         clearError(input);
-    input.style.borderColor = 'rgb(224, 95, 95)';
+             input.style.borderColor = 'rgb(224, 95, 95)';
     const box = input.closest('.input-box') || input.parentElement;
     const msg = document.createElement('small');
         msg.className = 'field-error-text';
@@ -105,7 +120,7 @@ function validateForm() {
                 isValid = false;
                 showError(usernameInput, 'Username is required.');
             }
-  }
+        }
  
         if (passwordInput) {
             clearError(passwordInput);
@@ -116,12 +131,25 @@ function validateForm() {
                 isValid = false;
                 showError(passwordInput, 'Password must be at least 6 characters.');
             }
-  }
+        }
+ 
+// Only runs on register.html, since that's the only page
+// with a CONFIRM PASSWORD field.
+        if (confirmPasswordInput) {
+            clearError(confirmPasswordInput);
+            if (confirmPasswordInput.value.trim() === '') {
+                isValid = false;
+                showError(confirmPasswordInput, 'Please confirm your password.');
+            } else if (passwordInput && confirmPasswordInput.value !== passwordInput.value) {
+                isValid = false;
+                showError(confirmPasswordInput, 'Passwords do not match.');
+            }
+        }
  
         if (confirmCheckbox && !confirmCheckbox.checked) {
             isValid = false;
-    const confirmBox = confirmCheckbox.closest('.confirm');
-        let msg = confirmBox.querySelector('.field-error-text');
+            const confirmBox = confirmCheckbox.closest('.confirm');
+            let msg = confirmBox.querySelector('.field-error-text');
             if (!msg) {
                 msg = document.createElement('small');
                 msg.className = 'field-error-text';
@@ -131,16 +159,17 @@ function validateForm() {
                 msg.style.marginTop = '4px';
                 confirmBox.appendChild(msg);
             }
-            msg.textContent = 'Please confirm it is you before logging in.';
-  } 
-        else if (confirmCheckbox) {
+            msg.textContent = confirmPasswordInput
+                ? 'Please agree to the terms before creating an account.'
+                : 'Please confirm it is you before logging in.';
+        } else if (confirmCheckbox) {
             const confirmBox = confirmCheckbox.closest('.confirm');
             const msg = confirmBox.querySelector('.field-error-text');
             if (msg) msg.remove();
-  }
+        }
  
         return isValid;
-}
+    }
  
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -150,26 +179,28 @@ form.addEventListener('submit', function (e) {
 // Currently action="" on your <form>, so there's
 // nowhere for it to submit to yet. Once you have a
 // backend endpoint, set the form's action attribute
-// and this will POST there. For now it just logs:
-            console.log('Login form valid — ready to connect to a backend.');
+    // and this will POST there. For now it just logs:
+            console.log(
+                confirmPasswordInput
+                    ? 'Signup form valid — ready to connect to a backend.'
+                    : 'Login form valid — ready to connect to a backend.'
+            );
         }
-}
-    );
+    });
  
 // Clear a field's error as soon as the user edits it
-[usernameInput, passwordInput].forEach(function (input) {
-    if (!input) return;
+    [usernameInput, passwordInput, confirmPasswordInput].forEach(function (input) {
+        if (!input) return;
         input.addEventListener('input', function () {
             clearError(input);
         });
-}
-   );
+    });
  
     if (confirmCheckbox) {
         confirmCheckbox.addEventListener('change', function () {
-    const confirmBox = confirmCheckbox.closest('.confirm');
-    const msg = confirmBox.querySelector('.field-error-text');
-        if (msg && confirmCheckbox.checked) msg.remove();
+            const confirmBox = confirmCheckbox.closest('.confirm');
+            const msg = confirmBox.querySelector('.field-error-text');
+            if (msg && confirmCheckbox.checked) msg.remove();
         });
     }
 })();
