@@ -76,6 +76,19 @@
         backdrop-filter: blur(2px);
         min-height: 100vh;
     }
+
+.nav-toggle { display: none; }
+ @media (max-width: 768px) {
+    .nav-toggle {
+         display: block; margin: 0 auto 8px; width: 36px;
+         height: 36px; background: none; border: 1px solid rgb(106,214,24);
+         border-radius: 6px; cursor: pointer; position: relative;
+       }
+    .nav-toggle span { display: block; height: 2px; width: 20px;
+         background: rgb(106,214,24); margin: 4px auto; }
+       header nav { display: none; flex-direction: column; }
+       header nav.is-open { display: flex; } 
+}
 }
 .index{ 
     background: linear-gradient(rgba(10,14,10,0.5), rgb(10,14,10,0.5)), url(../img/cc.jpeg);
