@@ -1,159 +1,183 @@
+
 @media (max-width: 768px){
     header{
         text-align: center;
+        padding: 16px 12px;
     }
     nav{
         display: flex;
         align-items: center;
         align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+         gap: 6px;
     }
     nav a{
-        padding: 10px 0;
+        padding: 10px 14px;
     }
      main{
-        padding: 10px;
+        padding: 16px;
     }
      .owner, .co-owner{
         flex-direction: column;
-        gap: 10px;
+        gap: 24px;
     }
      .wrapper{
         width: 100%;
-        padding: 20px;
+        max-width: 420px;
+        padding: 24px 20px;
     }
 }
+
 @media (min-width: 769px){
         header{
             text-align: left;
+            padding: 20px 40px;
         }
         nav{
             display: flex;
             align-items: center;
+            gap: 4px;
         }
         nav a{
-            padding: 10px 15px;
+            padding: 10px 18px;
         }
         main{
-            padding: 20px;
+            padding: 24px 40px;
         }
         .owner, .co-owner{
             flex-direction: row;
-            gap: 5rem;
+            gap: 4rem;
         }
         .wrapper{
             width: 420px;
-            padding: 30px 40px;
+            padding: 32px 44px;
         }
 }
 @media screen and (max-width: 768px) {
     .index, .contact, .aboutus, .lgsg, .services, .pm, .mr, .us, .ss{
-        background: url(../img/cc.jpeg);
+        background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        background-repeat: no-repeat;
         backdrop-filter: blur(2px);
+        min-height: 100vh;
     }
     
 }
 @media screen and (min-width: 769px) {
     .index, .contact, .aboutus, .lgsg, .services, .pm, .mr, .us, .ss{
-        background: url(../img/cc.jpeg);
+        background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        background-repeat: no-repeat;
         backdrop-filter: blur(2px);
+        min-height: 100vh;
     }
 }
 .index{ 
-    background: url(../img/cc.jpeg);
+    background: linear-gradient(rgba(10,14,10,0.5), rgb(10,14,10,0.5)), url(../img/cc.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
 
 header{
-    float: top;
-    position: top;
+    position: sticky;
+    top: 0;
     border-bottom: 3px solid rgb(106, 214, 24);
     margin-top: 0px;
+    background: rgba(8,10,8,0.55);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     
 h1{ 
     color: rgb(106, 214, 24);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom:none;
+    margin-top: 0 0 4px 0;
+    letter-spacing: 0.5px;
 }
 nav {
     overflow: hidden;
     margin-top: 0px;
 }
 nav a{
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 10px;
-    transition: 0.5s ease;
-    font-weight: 800;
-    padding: 10px 15px;
+    transition: 0.25s ease;
+    font-weight: 600;
+    border-radius: 6px;
 
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+    background: rgba(106, 214, 24, 0.1);
 }
 }
 main{ 
-    float: center;
-    position :center;
-    border: 2px solid rgb(106, 214, 24);
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    border: 1px solid rgba(106, 214, 24, 0.35);
+    border-radius: 12px;
+    padding: 32px;
+    background: rgba(8, 10, 8, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family:  'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-style: italic;
+    color: rgb(225, 232, 220);
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    line-height: 1.6;
 
 }
 h2{ 
     color: rgb(106, 214, 24);
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
+    border-bottom: 2px solid rgb(106, 214, 24, 0.35);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 }
 footer{ 
     border-top: 1px solid rgb(106, 214, 24);
-    color: rgb(205, 217, 197);
+    color: rgb(225,232,220,0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225,232,220,0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225,232,220,0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225,232,220,0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -162,58 +186,76 @@ nav a:hover{
 }
 
 .contact{
-     background: url(../img/cc.jpeg);
+    background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(2px);
+    min-height: 100vh;
 
 header{
-    float: top;
-    position: top;
-    border-bottom: 3px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    margin-top: 0;
+    background: rgba(8, 10, 8, 0.55);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom: none;
+    margin: 0 0 4px 0;
+    letter-spacing: 0.5px;
 }
 nav {
     overflow: hidden;
-    margin-top: 0px;
+    margin-top: 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 10px;
-    transition: 0.5s ease;
-    font-weight: 800;
     padding: 10px 15px;
+    transition: 0.25s ease;
+    font-weight: 600;
+    border-radius: 6px;
 
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+    background: rgba(106, 214, 24, 0.1);
 }
 }
 main{ 
+    max-width: 900px;
+    margin: 60px auto;
+    border: 1px solid rgba(106, 214, 24, 0.35);
+    border-radius: 12px;
+    padding: 32px;
+    background: rgba(8, 10, 8, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 19px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    text-decoration: underline;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    line-height: 1.6;
 }
 
 h2{ 
     color: rgb(106, 214, 24);
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid rgb(106, 214, 24, 0.35);
+    padding-bottom: 8px;
+    margin-top: 0
 }
 h3{
     color: rgb(106, 214, 24);
@@ -233,31 +275,33 @@ li{
 }
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-        margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -266,79 +310,100 @@ nav a:hover{
 }
 
 .aboutus{
-     background: url(../img/cc.jpeg);
+    background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(2px);
+    min-height: 100vh;
      
 header{
-    float: top;
-    position: top;
+    position: sticky;
+    top: 0;
     border-bottom: 3px solid rgb(106, 214, 24);
     margin-top: 0px;
+    background: rgba(8, 10, 8, 0.55);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom:none;
+    margin-top: 0 0 4px 0;
+    letter-spacing: 0.5px;
 }
 nav {
     overflow: hidden;
     margin-top: 0px;
 }
 nav a{
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 10px;
-    transition: 0.5s ease;
-    font-weight: 800;
     padding: 10px 15px;
+    transition: 0.25s ease;
+    font-weight: 600;
+    border-radius: 6px;
 
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+    background: rgba(106, 214, 24, 0.1);
 }
 }
 main{
+    max-width: 900px;
+    margin: 60px auto;
+    border: 1px solid rgba(106, 214, 24, 0.35);
+    border-radius: 12px;
+    padding: 32px;
+    background: rgba(8, 10, 8, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 19px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
     font-style: italic;
+    line-height: 1.6;
 }
 h2{ 
     color: rgb(106, 214, 24);
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
 
 }
 h3{
     color: rgb(106, 214, 24);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    border-top: 1px solid rgb(106, 214, 24);
+    font-weight: 700;
+    border-top: 1px solid rgba(106, 214, 24, 0.35);
+    padding-top: 12px;
     font-style: italic;
 
 }
 .owner{
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: space-around;
     flex-wrap: wrap;
 
 img{
     width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     vertical-align: middle;
+    border: 3px solid rgba(106, 214, 24, 0.35);
 }
 p{
     flex: 1;
@@ -347,13 +412,17 @@ p{
 .co-owner{
      display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: space-around;
     flex-wrap: wrap;
 
 img{
     width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     vertical-align: middle;
+    border: 3px solid rgba(106, 214, 24, 0.35);
 }
 p{
     flex: 1;
@@ -361,32 +430,35 @@ p{
 }
 }
 footer{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
     text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
     
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
-}
-h4{ 
-    border-top: 1px solid rgb(106, 214, 24);
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+    border-top: none;
+    margin: 0 0 4px 0;
+}
+h4{ 
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    margin: 4px 0;
     
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-    transition: 0.5s ease;
+    white-space: nowrap;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -395,132 +467,153 @@ nav a:hover{
 }
 
 .lgsg{
-    background: url(../img/cc.jpeg);
+    background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(2px);
-     
+    min-height: 100vh;
+
 header{
-    float: top;
-    position: top;
-    border-bottom: 3px solid rgb(106, 214, 24);
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgb(106, 214, 24);
     margin-top: 0px;
+    background: rgba(8, 10, 8, 0.55);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom:none;
+    margin-top: 0 0 4px 0;
+    letter-spacing: 0.5px;
 }
 nav {
     overflow: hidden;
     margin-top: 0px;
 }
 nav a{
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 10px;
-    transition: 0.5s ease;
-    font-weight: 800;
     padding: 10px 15px;
+    transition: 0.25s ease;
+    font-weight: 600;
+    border-radius: 6px;
 
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+    background-color: rgba(106, 214, 24, 0.1);
 }
 }
 main{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 .wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 420px;
     margin: 0 auto;
-    background: transparent;
-    border-radius: 50px;
-    padding: 30px 40px;
-    border: 2px solid rgb(106, 214, 24);
+    background: rgba(8, 10, 8, 0.45);
+    border-radius: 16px;
+    border: 1px solid rgba(106, 214, 24, 0.35);
     backdrop-filter: blur(20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 .wrapper h2{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: rgb(106, 214, 24);
+    margin: 0;
 }
 .wrapper .input-box{
     background: transparent;
-    height: 40px;
-    gap: 10px;
+    height: 44px;
     width: 100%;
     margin: 0 auto;
 }
 .input-box input{
     width: 100%;
     height: 100%;
-    background: transparent;
-    border : 1px solid rgb(106, 214, 24);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(106, 214, 24, 0.35);
     outline: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(205, 217, 197);
+    color: rgba(225, 232, 220);
+    padding: 0 16px;
+    transition: 0.25s ease;
+}
+.input-box input:focus {
+    border-color: rgb(106, 214, 24);
+    box-shadow: 0 0 0 3px rgba(106, 214, 24, 0.15);
 }
 .input-box input::placeholder{
-    color: rgb(205, 217, 197);
+    color: rgba(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    padding-left: 20px;
 }
 .wrapper .confirm{
     width: 100%;
     height: 40px;
     border: none;
     outline: none;
-    color: rgb(205, 217, 197);
-    font-size: 16px;
+    color: rgb(106, 214, 24);
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .confirm label input{
     accent-color: rgb(106, 214, 24);
-    padding: 0px 10px;
+    margin-right: 8px;
 }
 .wrapper .btn{
     width: 100%;
-    height: 45px;
+    height: 46px;
     border: none;
     outline: none;
-    color: rgb(106, 214, 24);
+    color: rgb(8, 10, 8);
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
-    background: rgb(205, 217, 197);
+    background: rgb(106, 214, 24);
     cursor: pointer;
-    border-radius: 50px;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(222, 213, 213, 0.847);
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(106, 214, 24, 0.3);
+    transition: 0.25s ease;
+}
+.wrapper .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(106, 214, 24, 0.4);
 }
 .wrapper .account link{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgba(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        margin-top: 10px;
+    text-align: center;
+    margin-top: 4px;
 }
 .account link p a{
-    color: rgb(205, 217, 197);
+    color: rgb(106, 214, 24);
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 700;
 }
 .account link p a:hover{
-     color: rgb(106, 214, 24);
-     text-decoration: none;
-     font-weight: 900;
+    color: rgb(225, 232, 220);
+    text-decoration: underline;
 }
 h3{
     color: rgb(205, 217, 197);
@@ -534,75 +627,97 @@ p{
 }
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 18px 12px;
+    text-align: center;
+    background: rgba(8, 10, 8, 0.55);
+
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
-    position: bottom;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
 }
+@media (min-width: 769px) {
+    .wrapper {
+        width: 420px;
+        padding: 36px 44px;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 24px;
+    }
+}
 }
 }
 .services{
-    background: url(../img/cc.jpeg);
+    background: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/cc.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(3px);
+    min-height: 100vh;
      
 header{
-    float: top;
-    position: top;
-    border-bottom: 3px solid rgb(106, 214, 24);
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgb(106, 214, 24);
     margin-top: 0px;
+    background: rgba(8, 10, 8, 0.55);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom:none;
+    margin-top: 0 0 4px 0;
+    letter-spacing: 0.5px;
 }
 nav {
     overflow: hidden;
     margin-top: 0px;
 }
 nav a{
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 10px;
-    transition: 0.5s ease;
-    font-weight: 800;
     padding: 10px 15px;
+    transition: 0.25s ease;
+    font-weight: 600;
+    border-radius: 6px;
 
 }
 nav a:hover{
     color: rgb(106, 214, 24);
+    background: rgba(106, 214, 24, 0.1);
 
 }
 }
@@ -610,62 +725,70 @@ nav a:hover{
 main{ 
 h2{ 
     color: rgb(106, 214, 24);
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;  
-    font-weight: 900;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
 }
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
     font-style: italic;
+    line-height: 1.6;
 }
 h3{
     color: rgb(106, 214, 24);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 1px solid rgb(106, 214, 24);
+    border-bottom: 1px solid rgba(106, 214, 24, 0.35);
+    padding-bottom: 6px;
 }
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.5s ease;
-    mask-image: linear-gradient(to bottom, transparent, rgb(201, 111, 31));
+    margin: 16px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+
 img:hover{
-        color: rgb(106, 214, 24);
+    transform: scale(1.02);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
     }
 }
 }
 footer{ 
     border-top: 1px solid rgb(106, 214, 24);
-    color: rgb(205, 217, 197);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -679,56 +802,63 @@ nav a:hover{
 
 
 .pm{
-    background: url(../img/oo.jpeg);
+    background-image: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/oo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
 
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 1.6;
 }
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
-     margin-top: 0px;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 h5{ 
     color: rgb(106, 214, 24);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -736,56 +866,63 @@ nav a:hover{
 }
 }
 .mr{
-    background: url(../img/oo.jpeg);
+    background-image: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/oo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
 
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 1.6;
 }
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 h5{ 
     color: rgb(106, 214, 24);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -793,56 +930,63 @@ nav a:hover{
 }
 }
 .us{
-    background: url(../img/oo.jpeg);
+    background-image: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/oo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
 
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 1.6;
 }
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
-     margin-top: 0px;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 h5{ 
     color: rgb(106, 214, 24);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -850,55 +994,63 @@ nav a:hover{
 }
 }
 .ss{
-     background: url(../img/oo.jpeg);
+    background-image: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/oo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
+
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 1.6;
 }
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
-    margin-top: 0px;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 h5{ 
     color: rgb(106, 214, 24);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
@@ -906,55 +1058,63 @@ nav a:hover{
 }
 }
 .eds{
-    background: url(../img/oo.jpeg);
+    background-image: linear-gradient(rgba(10,14,10,0.5), rgba(10,14,10,0.5)), url(../img/oo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     backdrop-filter: blur(1px);
+    min-height: 100vh;
+
 p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
+    color: rgb(225, 232, 220);
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 1.6;
 }
 h1{ 
     color: rgb(106, 214, 24);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid rgb(106, 214, 24);
-     margin-top: 0px;
+    border-bottom: 2px solid rgb(106, 214, 24);
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 h5{ 
     color: rgb(106, 214, 24);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
 }
 footer{ 
-    color: rgb(205, 217, 197);
+    border-top: 1px solid rgb(106, 214, 24);
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(8, 10, 8, 0.55);
+p{ 
+    color: rgb(225, 232, 220, 0.75);
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    float: bottom;
-    position: bottom;
-    text-align: center;
-p{ 
-    color: rgb(205, 217, 197);
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-top: 1px solid rgb(106, 214, 24);
-    margin-bottom: 0px;
+    border-top: none;
+    margin: 0 0 4px 0;
 }
 h4{ 
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+    margin: 4px 0;
 }
 nav a{
-    color: rgb(205, 217, 197);
-    font-size: 15px;
+    color: rgb(225, 232, 220, 0.75);
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 nav a:hover{
     color: rgb(106, 214, 24);
