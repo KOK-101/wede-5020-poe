@@ -41,6 +41,7 @@ TIMELINE AND MILESTONE
 •	Week 3(13-April to 19-April): Waiting for acceptance of a proposal to do and the start of part 1(html).
 •	Week 4(20-April): Completion of part 1(html, GitHub etc) and submission of part 1.
 •	Week 5-Week 11(21-April to 29-May): Start and completion of part 2(CSS and JavaScript).
+-   Week 9-Week 14(29-may to 19-june):  completion of my part 3 (javaScript)
 
 
 ## Sitemap
@@ -56,6 +57,7 @@ https://www.drawio.com/<br/>
 https://youtu.be/JNFdCgmMkPk?si=d_sC--arPUrende1<br/>
 https://youtu.be/hlwlM4a5rxg?si=tnHgScwNCBaeSzKj<br/>
 https://youtu.be/kMme0C9lMhQ?si=lT21tBeetQo6hEqX<br/>
+https://www.w3schools.com/html/default.asp<br/>
 
 ## Desktop size
 <img src="img/Desktop size.png"><br>

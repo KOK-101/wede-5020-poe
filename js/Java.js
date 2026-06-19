@@ -1,4 +1,4 @@
- //
+ // Making a nav toggle  
 
 (function () {
     const headers = document.querySelectorAll('header');
@@ -6,7 +6,7 @@ headers.forEach(function (header) {
     const nav = header.querySelector('nav');
         if (!nav) return;
  
-//
+// creating the button 
 
     const toggleBtn = document.createElement('button');
 toggleBtn.className = 'nav-toggle';
@@ -20,7 +20,8 @@ toggleBtn.addEventListener('click', function () {
     const isOpen = nav.classList.toggle('is-open');
 toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
-//
+
+// making it to close the menu after clicking the link
 
 nav.addEventListener('click', function (e) {
      if (e.target.tagName === 'A') {
@@ -31,7 +32,7 @@ nav.addEventListener('click', function (e) {
     });
 })();
 
-//
+// creating the login and signup also the register form validation
 
 (function () {
     const form = document.querySelector('.wrapper form');
@@ -42,17 +43,15 @@ nav.addEventListener('click', function (e) {
     const confirmPasswordInput = form.querySelector('input[placeholder="CONFIRM PASSWORD"]');
     const confirmCheckbox = form.querySelector('.confirm input[type="checkbox"]');
  
-// Mask the password field — your login page's HTML currently
-// has type="text" on it. register.html already uses
-// type="password" so this is a no-op there.
+// Masking the password field by default
+
     if (passwordInput) {
         passwordInput.setAttribute('type', 'password');
     }
  
-    // Show/hide password toggle — adds a small "Show" text button
-    // inside a password input-box. No HTML changes needed; it's
-    // built and inserted here. Reusable so it applies to both the
-    // password field and (on register.html) the confirm field.
+// Show/hide password toggle — adds a small "Show" text button inside a password input-box 
+// making it reusable so it applies to both the password field and (on register.html) the confirm field.
+
 function addShowHideToggle(input) {
         if (!input) return;
     const box = input.closest('.input-box') || input.parentElement;
@@ -133,8 +132,8 @@ function validateForm() {
             }
         }
  
-// Only runs on register.html, since that's the only page
-// with a CONFIRM PASSWORD field.
+// Confirm password validation only applies to the register form, not the login form.
+
         if (confirmPasswordInput) {
             clearError(confirmPasswordInput);
             if (confirmPasswordInput.value.trim() === '') {
@@ -175,11 +174,10 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
  
         if (validateForm()) {
+
 // Form passed all checks.
-// Currently action="" on your <form>, so there's
-// nowhere for it to submit to yet. Once you have a
-// backend endpoint, set the form's action attribute
-    // and this will POST there. For now it just logs:
+// Currently action="" so there's nowhere for it to submit to yet For now it just logs:
+
             console.log(
                 confirmPasswordInput
                     ? 'Signup form valid — ready to connect to a backend.'
@@ -188,7 +186,8 @@ form.addEventListener('submit', function (e) {
         }
     });
  
-// Clear a field's error as soon as the user edits it
+// Clearing a field's error as soon as the user edits it
+
     [usernameInput, passwordInput, confirmPasswordInput].forEach(function (input) {
         if (!input) return;
         input.addEventListener('input', function () {
@@ -205,7 +204,7 @@ form.addEventListener('submit', function (e) {
     }
 })();
 
-//
+// making an auto-updating copyright year in the footer
 
 (function () {
     const footerParagraphs = document.querySelectorAll('footer p');
@@ -218,11 +217,12 @@ footerParagraphs.forEach(function (p) {
     });
 })();
 
-//
+// making a "click to copy" feature for the contact details on contact.html
 
 (function () {
     const contactList = document.querySelector('main ul');
         if (!contactList) return; 
+
 // Not on this page
  
     const items = contactList.querySelectorAll('li');
@@ -232,15 +232,15 @@ items.forEach(function (li) {
         if (!label) return;
  
 // Everything in the <li> after the </h5> tag is the value
-// (e.g. "0791945678/0823569901"). Grab it as plain text.
+
     const fullText = li.textContent.trim();
     const labelText = label.textContent.trim();
     const value = fullText.slice(labelText.length).trim();
  
 if (!value) return;
  
-// Rebuild the <li> contents: keep the <h5>, wrap the value
-// in a clickable, styled span.
+// Rebuilding the <li> contents
+
     const valueSpan = document.createElement('span');
         valueSpan.textContent = value;
         valueSpan.style.cursor = 'pointer';
@@ -265,8 +265,7 @@ function copyValue() {
                 }, 1500);
             })
 .catch(function () {
-// Clipboard API blocked (e.g. insecure context) —
-// fail silently rather than breaking the page.
+// making sure the user is notified if the copy fails
             });
         }
  

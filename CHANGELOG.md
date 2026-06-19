@@ -10,13 +10,25 @@ This project follows Semantic Versioning.
 - image links on my service page
 -linked all my pages to the csss stylesheet
 -added 5 more html pages for my linked images on my service page
+-a correction of my css 
+-javascript style page added
+-a new page called register is added
 
 ### Changed
 - change then font of text to italics etc
 -codes styles on my ccs stylesheet with media links
+-fixed some codes and features on my css
+-added links to social media 
+-i gave the create account link a href link
+-
 
 ### Fixed
-- fixed my fotter as some of the things were correctly placed
+- fixed my fotter as some of the things werent correctly placed
+-my css page , some codes did not fit my website
+-added java script and fixed some stuff
+-i gave the create account link a href link
+-added some direction text on my services page
+-fixed my footer and header to be stationery
 
 ## Semantic Versioning
 
